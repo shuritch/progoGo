@@ -1,0 +1,46 @@
+@keyframes span1{
+	0%{
+		left: 0;
+	}
+	25%{
+		left: 5px;
+	}
+	50%{
+		left: 10px;
+	}
+	100%{
+		left: 0;
+	}
+}
+
+@keyframes span2{
+	0%{
+		left: 0;
+	}
+	25%{
+		left: 5px;
+	}
+	50%{
+		left: 0px;
+	}
+	75%{
+		left: -5px;
+	}
+	100%{
+		left: 0;
+	}
+}
+@keyframes span3{
+	0%{
+		left: 0;
+	}
+	45%{
+		left: 5px;
+	}
+	80%{
+		left: -10px;
+	}
+	100%{
+		left: 0;
+	}
+}

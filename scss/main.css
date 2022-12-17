@@ -1,0 +1,2106 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 25px;
+}
+body{
+	position: relative;
+	height: auto;
+	width: 100%;
+	display: flex;
+	background:url(img/fancy-pants.jpg) repeat center center;
+	background-attachment: fixed;
+	flex-direction: column;
+	overflow-x: hidden;
+	left: 0;
+	font-family: sans-serif;
+}
+#sort{
+	position: relative;
+	height: auto;
+	width: 100%;
+	display: inline-flex;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	left: 0;
+}
+#container{
+	position: relative;
+	height: auto;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: 1s;
+	left: 0;
+
+}
+body::-webkit-scrollbar { width: 15px; height: 15px;}
+
+body::-webkit-scrollbar-track {  background-color: #999;}
+body::-webkit-scrollbar-track-piece { background-color: rgba(0,0,0,1);}
+body::-webkit-scrollbar-thumb {min-height: 150px; height: 50px; width: 15px; background: linear-gradient( to bottom, rgb(255, 153,1),  rgb(255, 153, 0.1),transparent); }
+body::-webkit-scrollbar-corner { background-color: #999;}
+body::-webkit-resizer { background-color: #f90;}
+*::selection {
+background: #f90; 
+color: #fff;
+}
+*::-moz-selection {
+background: #f90; 
+color: #fff;
+}
+#downloadblock::-webkit-scrollbar { width: 15px; height: 15px;}
+
+#downloadblock::-webkit-scrollbar-track {  background-color: #0ae;}
+#downloadblock::-webkit-scrollbar-track-piece { background-color: rgba(0,0,0,1);}
+#downloadblock::-webkit-scrollbar-thumb { height: 50px; width: 15px; background: linear-gradient( to bottom, rgb(0, 170,238),  rgb(0, 170,238),transparent); }
+#downloadblock::-webkit-scrollbar-corner { background-color: #999;}
+#downloadblock::-webkit-resizer { background-color: #0ae;}
+section{
+	height: 1026px;
+	width: 70%;
+	float: left;
+	background:rgba(30,30,30,1) url(img/fake_brick.png) repeat center center;
+	position: relative;
+	 box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 1s;
+	left: 0;
+	min-width: 825px;
+
+}
+header {
+	height: 120px;
+	width: 100%;
+	transition: 1s;
+	background:rgba(20,20,20,1)url(img/fake_brick.png) repeat center center;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	z-index: 9999;
+}
+#scrollLength{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	transition: 0.2s;
+	width: 0;
+	background: #f90;
+}
+header h2 {
+	margin-right: 100px;
+}
+#lastSection{
+	height: 400px;
+}
+footer{
+	transition: 1s;
+	height: 400px;
+	width: 100%;
+	background:rgba(20,20,20,1)url(img/fake_brick.png) repeat center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	align-items: flex-end;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#secContainer{
+	position: relative;
+	min-height: 100%;
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.headcap{
+	position:relative;
+	height: 90px;
+	width: 100%;
+	width: 75%;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	border-left: 2px solid #f90;
+	border-right: 2px solid #f90;
+	background:url(img/fancy-pants.jpg) repeat center center;
+	display: flex;
+	background-attachment: fixed;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+}
+.headcap h2{
+	color: #f90;
+}
+#navbar{
+	min-height: 100%;
+	z-index: 2;
+	position: relative;
+	float: left;
+	display: flex;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+	background:rgba(20,20,20,1)url(img/classy_fabric.png) repeat center center;
+	transition: 1s;
+	overflow-y: auto;
+	min-width: 350px;
+	max-width: 450px;
+}
+#navbar::-webkit-scrollbar { width: 15px; height: 15px;}
+
+#navbar::-webkit-scrollbar-track {  background-color: #999;}
+#navbar::-webkit-scrollbar-track-piece { background-color: rgba(0,0,0,1);}
+#navbar::-webkit-scrollbar-thumb { height: 50px; width: 15px; background: linear-gradient( to bottom, rgb(255, 153,1),  rgb(255, 153, 0.1),transparent); }
+#navbar::-webkit-scrollbar-corner { background-color: #999;}
+#navbar::-webkit-resizer { background-color: #f90;}
+#navbutton {
+	height: 65px;
+	width: 65px;
+	position: relative;
+	background: rgba(50,50,50,1)url(img/classy_fabric.png) repeat center center;
+	border:3px solid #f90;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-left: 100px;
+	display: none;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+.navclose{
+	height: 5px;
+	width: 60%;
+	background: #f90;
+	position: relative;
+	transition: 1s;
+}
+.navclose:nth-child(1){
+	top: 20px;
+	width: 25px;
+	right: 5px;
+	animation: span1 1s linear infinite;
+}
+.navclose:nth-child(2){
+
+	animation: span2 1s linear infinite;
+}
+.navclose:nth-child(3){
+	bottom: 20px;
+	width: 30px;
+	left: 5px;
+	animation: span3 1.5s linear infinite;
+}
+.navopen{
+	height: 80%;
+	transition: 1s;
+	width: 8px;
+	background: #f90;
+	position: absolute;
+
+}
+.navopen:nth-child(1){
+	position: relative;
+	transform: rotate(45deg);
+}
+.navopen:nth-child(2){
+	display: none;
+}
+.navopen:nth-child(3){
+	
+	transform: rotate(-45deg);
+	
+}
+#createdBy{
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-end;
+	
+}
+#createdBy h2{
+	left: 5px;
+}
+#createdBy{
+	display: inline-flex;
+
+}
+#logoblock{
+	width: auto;
+	height: 100%;
+	position: relative;
+
+	display: inline-flex;
+}
+#secheaderpart{
+	position: relative;
+	width: auto;
+	height: 100%;
+	
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#logoimg{
+	height: 100%;
+	width: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+#logotext{
+	height: 100%;
+	width: auto;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	margin-left: 20px;
+
+}
+#brandname{
+	font-size: 1.5em;
+}
+#shortabout{
+	font-size: 1.25em;
+	color: #f90;
+}
+#trandbuttons{
+	width: auto;
+	display: inline-flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+ .toptrands {
+	color: #fff;
+	font-size: 0.6em;
+	height: 100%;
+	width: auto;
+	text-transform: uppercase;
+	position: relative;
+	margin-left: 20px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+	transition: 0.2s;
+}
+.toptrands img{
+	position: absolute;
+	bottom: -20px;
+	height: 40%;
+	
+	z-index: 2;
+	
+}
+.toptrands::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 40px;
+	background: #0ae;
+	height: 2px;
+	width: 0;
+	transition: 0.2s;
+}
+.toptrands::before{
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 40px;
+	transition: 0.2s;
+	background: #0ae;
+	height: 2px;
+	width: 0;
+}
+ .toptrands:hover{
+ 	color: #0ae;
+ }
+ .toptrands:hover::after{
+ 	width: 100%;
+
+ }
+ .toptrands:hover::before{
+ 	width: 100%;
+ 	
+ }
+#search2{
+	display: none;
+	height: 50%;
+	width: 60px;
+	background: #fff;
+	margin-right: 15px;
+	background: url(img/seo.png) no-repeat center center;
+	background-size: contain;
+	cursor: pointer;
+}
+#search{
+	height: 100%;
+	width: auto;
+	display:flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	margin-right: 15px;
+}
+#search input{
+	height: 50px;
+	width: 280px;
+	outline: none;
+	padding-left: 5px;
+	color: #fff;
+	font-size: 0.8em;
+	position: relative;
+	border: 2px solid rgba(20,20,20,0.5);
+	box-shadow: 0 0 20px rgba(20,20,20,0.5);
+	background:rgba(20,20,20,1)url(img/classy_fabric.png) repeat center center; 
+}
+#search button{
+	position: absolute;
+	border: none;
+	right: 0;
+	margin-right: 5px;
+	border-radius: 50%;
+	height: 40px;
+	cursor: pointer;
+	outline:none;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: 1px solid #f90;
+	background:rgba(30,30,30,1) url(img/search.png) no-repeat center center;
+	background-size: 80%;
+}
+#search3{
+	height: auto;
+	width: 100%;
+	display:flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	margin-right: 15px;
+	margin-top: 50px;
+	display: none;
+}
+#search3 input{
+	height: 50px;
+	width: 280px;
+	outline: none;
+	padding-left: 5px;
+	color: #fff;
+	font-size: 0.8em;
+	position: relative;
+	border: 2px solid rgba(20,20,20,0.5);
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	background:rgba(20,20,20,1)url(img/classy_fabric.png) repeat center center; 
+}
+#search3 button{
+	position: absolute;
+	border: none;
+	right: 0;
+	margin-right: 5px;
+	border-radius: 50%;
+	height: 40px;
+	cursor: pointer;
+	outline:none;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: 1px solid #f90;
+	background:rgba(30,30,30,1) url(img/search.png) no-repeat center center;
+	background-size: 80%;
+}
+
+#createdBy h2{
+	width: auto;
+	font-size: 0.6em;
+	display: inline-flex;
+	position: relative;
+	right: 40px;
+}
+#createdBy h2 a{
+	margin-right: 15px;
+	margin-left: 15px;
+font-size: 1em;
+
+}
+#AlexanderOrange{
+	color: #0ae;
+}
+#company{
+	color: #f90;
+}
+#Createdwhen{
+	border-radius: 50%;
+	border: 2px solid #fff;
+	height:15px;
+	width: 15px;
+	font-size: 0.5em;
+	position: relative;
+	
+	right: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#aboutBlock{
+	height: auto;
+	width: 500px;
+	position:relative;
+	display: flex;
+	float: right;
+	justify-content: flex-end;
+	align-items: flex-end;
+	flex-direction: column;
+	right: 40px;
+
+}
+#logoshortabout{
+	display: inline-flex;
+	margin-bottom:20px;
+}
+#logo2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+}
+#shortabout2{
+	display: flex;
+	flex-direction: column;
+}
+#shortabout2 h2:nth-child(1){
+	font-size: 1.7em;
+	text-transform: uppercase;
+	color: #fff;
+}
+#shortabout2 h2:nth-child(2){
+	font-size: 1.45em;
+	color: #f90;
+}
+#aboutus h2{
+	font-size: 0.8em;
+	text-align: right;
+}
+.nav{
+	margin-top: 50px;
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: url(img/fake_brick.png) repeat center center;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	
+}
+.nav__item{
+	display: block;
+	border-top: 1px solid #f90;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+
+	overflow: hidden;
+}
+.nav__item-link img{
+	height: 20px;
+}
+.cotegory{
+	color: #f90;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: auto;
+	position: relative;
+	width: 200px;
+	margin-left: 20px;
+}
+.cotegory::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(to right, #f90, transparent);
+	width: 100%;
+	height: 2px;
+}
+#chatname::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(to right, #0ae, transparent);
+	width: 100%;
+	height: 2px;
+}
+.nav__item-link{
+	color: #fff;
+	text-decoration: none;
+	padding:16px 20px;
+	height: auto;
+	display: flex;
+	text-transform: uppercase;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	font-size: 1em;
+	background: url(img/fake_brick.png) repeat center center;
+}
+.nav__item-link::before{
+	content: '';
+	width: 14px;
+	height: 14px;
+	background: url(img/fake_brick.png) repeat center center;
+	background-size: cover;
+	position: absolute;
+	left: 20px;
+	bottom: -7px;
+	transform: rotate(-45deg);
+	z-index: 2;
+}
+.nav__item-link span {
+	margin-right: 10px;
+	background-size: cover;
+}
+
+.nav__submenu{
+	position: relative;
+	max-height: 0;
+	transition: max-height 0.5s;
+}
+.nav__submenu-link span {
+	right: 20px;
+	background-size: cover;
+
+}
+
+.nav__submenu-link{
+	text-transform: uppercase;
+	display: block;
+	padding: 18px 56px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	transition: background 0.2s ease;
+}
+.nav__submenu-link{
+	background: rgba(50,50,50,1)url(img/classy_fabric.png) repeat center center;
+}
+#webchat{
+	margin-top: 50px;
+	height: auto;
+	width: 100%;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	background: url(img/fake_brick.png) repeat center center;
+}
+#chatWindow{
+	overflow-y: auto;
+	height: 500px;
+	width: 100%;
+	display: flex;
+	
+	position: relative;
+	background: rgba(50,50,50,1)url(img/classy_fabric.png) repeat center center;
+	flex-direction: column;
+}
+#writing{
+	background: url(img/fake_brick.png) repeat center center;
+	height: 120px;
+	z-index: 2;
+	position: relative;
+	width: 100%;
+	flex-direction: column;
+	display: flex;align-items: flex-end;
+
+}
+#writing #messinput{
+	height: 50%;
+	border: none;
+	color: #fff;
+	outline: none;
+	font-size: 0.7em;
+	width: 100%;
+	border-top: 2px solid #0ae;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	background: url(img/fake_brick.png) repeat center center;
+}
+#writing #messinput::placeholder{
+	padding-left: 10px;
+}
+.empty{
+	margin-top: 50px;
+	width: 100%;
+	position: relative;
+	height: 100px;
+	min-height: 200px;
+	
+}
+#messagebauttons{
+	display: inline-flex;
+	height: 50%;
+	width: 100%;
+
+}
+/*
+#smileselect{
+	width: 25%;
+	height: 100%;
+	background: url(img/codesmile.png) no-repeat center center;
+	background-size: 40%; 
+	cursor: pointer;
+border-right: 2px solid #0ae;
+}
+*/
+#sign{
+	width: 25%;
+	height: 100%;
+	border-right: 2px solid #0ae;
+	background: url(img/user.png) no-repeat center center;
+		background-size: 40%;
+	cursor: pointer;
+	border-left: 2px solid #0ae;
+}
+.animabut{
+	position: relative;
+}
+.animabut::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #0ae;
+	height: 2px;
+	width: 0;
+	transition: 0.2s;
+}
+#lastbutnvis{
+	background: url(img/classy_fabric.png) repeat center center;
+	height:100%;
+	width: 25%;
+	position: relative;
+}
+.animabut::before{
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	transition: 0.2s;
+	background: #0ae;
+	height: 2px;
+	width: 0;
+}
+.animabut:hover::after{
+ 	width: 100%;
+
+ }
+ .animabut:hover::before{
+ 	width: 100%;
+ 	
+ }
+ #imginp{
+ 	opacity: 0;
+ }
+#downloadblock{
+	position: relative;
+	height:1000px;
+	display: flex;
+	
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	top: 200px;
+	overflow-y: auto;
+}
+#photoselect {
+	display: none;
+	position: relative;
+
+	background: url(img/camera.png) no-repeat center center;
+	background-size: 40%;
+	width: 25%;
+	height: 100%;
+	cursor: pointer;
+	border-right: 2px solid #0ae;
+	font-size: 0.5em;
+}
+
+#messsendbut{
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+
+	background: url(img/send.png) no-repeat center center;
+	background-size: 40%; 
+	
+	width: 25%;
+	position: relative;
+	height: 100%;
+	border: none;
+	border-top: 2px solid #0ae;
+	cursor: pointer;
+	
+	
+}
+#messsendbut::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #0ae;
+	height: 0;
+	width: 2px;
+	transition: 0.2s;
+}
+#messsendbut::before{
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	transition: 0.2s;
+	background: #0ae;
+	height: 0;
+	width: 2px;
+}
+#messsendbut:hover::after{
+ 	height: 100%;
+
+ }
+ #messsendbut:hover::before{
+ 	height: 100%;
+ 	
+ }
+#reklamablock{
+	height: auto;
+	width: 100%;
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.reklama{
+	height: 300px;
+	width: 90%;
+	margin-top: 50px;
+	display: flex;
+	border: 2px solid #f90;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+#websiteversion{
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	text-transform: uppercase;
+	transform: translate(-50%,0);
+}
+#websiteversion span{
+	color: #f90;
+}
+#animalogosection{
+height: 300px;
+width: 100%;
+margin-top: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#animalogo{
+	height: 550px;
+	width: 550px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	
+}
+#programsinform{
+	margin-top: 50px;
+	position: relative;
+	width: 100%;
+	height: 60px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+#programsinform div{
+	font-size: 0.55em;
+	text-align: center;
+	margin-right: 15px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 15px;
+	position: relative;
+}
+#programsinform div span{
+	height: 8px;
+	width: 8px;
+	position: relative;
+	margin-right: 12px;
+	background: #0ae;
+	border-radius: 50%;
+}
+#programsinform div:nth-child(1) span{
+	background: #f90;
+	
+	box-shadow: 0 0 20px rgba(255,153,0,0.7),
+				inset 0 0 25px rgba(255,153,0,0.5),
+				inset 0 0 30px rgba(255,153,0,0.25);
+}
+#programsinform div:nth-child(2) span{
+	background: #27ae60;
+	box-shadow: 0 0 20px rgba(39,174,96,0.7),
+				inset 0 0 25px rgba(39,174,96,0.5),
+				inset 0 0 30px rgba(39,174,96,0.25);
+}
+#programsinform div:nth-child(3) span{
+	background: #0ae;
+	box-shadow: 0 0 20px rgba(0,170,238,0.7),
+				inset 0 0 25px rgba(0,170,238,0.5),
+				inset 0 0 30px rgba(0,170,238,0.25);
+}
+.message{
+	height: auto;
+	width: 100%;
+	position: relative;
+	display: inline-flex;
+	margin-bottom: 15px;
+	position: relative;
+	margin-top:15px; 
+	
+
+}
+.userimg{
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 25%;
+	background: url(img/user.png) no-repeat center center;
+	background-size: contain;
+	max-height: 60px;
+	top: 10px;
+}
+.userinfo{
+	float: right;
+	position: relative;
+	height: 100%;
+	width: 75%;
+	display: flex;
+	margin-left: 15px;
+	flex-direction: column;
+
+}
+#statisticcontainer
+{
+	position: relative;
+	height: 1000px;
+	width: 100%;
+	background: url(img/fake_brick.png) repeat center center;
+	display: flex;
+	justify-content:center;
+	
+	align-items: center;
+}
+.statisticCircle{
+	height: 200px;
+	width: 200px;
+	margin-top: 50px;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	display: flex;
+	justify-content:center;
+	transition:all 1s;
+	color: #f90;
+	text-transform: uppercase;
+	align-items: center;
+	flex-direction: column;
+	border:2px solid #f90;
+	margin-right: 50px;
+	margin-left: 50px;
+	z-index: 1;
+	background: url(img/fake_brick.png) repeat center center;
+}
+.statisticCircle span{
+	font-size: 1.5em;
+	color: #0ae;
+}
+#circlestat{
+	position: relative;
+	height: 550px;
+	width: 100%;
+	display: flex;
+	justify-content:center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.statisticCircle p{
+	margin-top: 20px;
+	color: #f90;
+}
+.statisticCircle::before{
+	content: '.';
+	height: 280px;
+	width: 280px;
+	position: absolute;
+	background: transparent;
+	z-index: -3;
+	border-radius: 50%;
+	animation-delay: 0.5s;
+	font-size: 5em;
+
+	animation: rotation 2s linear infinite
+}
+
+#controlpanelsection{
+	height: calc(100% - 1400px);
+	width: 100%;
+	position: relative;
+	background: url(img/fake_brick.png) repeat center center;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	flex-direction: column;
+
+}
+@keyframes rotation{
+	0%{transform: rotate(0);}
+	100%{transform: rotate(360deg);}
+}
+.controllrazel{
+	height: 50px;
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 1.2em;
+	color: #0ae;
+	border-bottom: 2px solid #f90;
+	border-top: 2px solid #f90;
+}
+#controlpanelblock{
+	height: 50%;
+	position: relative;
+	width: 100%;
+	display: flex;
+
+	align-items: center;
+	flex-direction: column;
+}
+#controlform{
+	height: calc(100% - 50px);
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+#controlform2{
+	height: calc(100% - 50px);
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+#controlpanelblock2{
+	height: 50%;
+	position: relative;
+	width: 100%;
+	display: flex;
+	
+	align-items: center;
+	flex-direction: column;
+}
+.controlpanel{
+	position: relative;
+	height: 100px;
+	min-width: 100px;
+	padding: 10px;
+	transition: 1s;
+	margin: 20px;
+	border-top:2px solid #0ae;
+	border-bottom:2px solid #0ae;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.controlpanel h2{
+	color: #0ae;
+	margin-bottom: 20px
+}
+.controlpanel input{
+	height: 40px;
+	width: calc(100% - 10px);
+	background: url(img/classy_fabric.png) repeat center center;
+	border: none;
+	outline: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding-left: 10px;
+	color: #f90;
+}
+.controlpanel input::placeholder{
+	text-align: center;
+}
+.controlpanel label{
+	height: 40px;
+	width: 100%;
+	background: url(img/classy_fabric.png) repeat center center;
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #f90;
+	left: 0;
+}
+.controlpanel select{
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	color: #f90;
+	left: 0;
+	border: none;
+	outline: none;
+	background: url(img/classy_fabric.png) repeat center center;
+}
+.controlpanel select option{
+	color: #f90;
+}
+.adminbutton{
+	position: relative;
+	height: 124px;
+	min-width: 120px;
+	padding: 10px;
+	padding: 10px;
+	outline: none;
+	transition: 1s;
+	margin: 20px;
+	border: none;
+	border-top:2px solid #0ae;
+	border-bottom:2px solid #0ae;
+	display: flex;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	flex-direction: column;
+	color: #0ae;
+}
+.adminbutton::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 2px;
+	transition: 0.2s;
+	height: 0;
+	background: #0ae;
+}
+.adminbutton::after{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 2px;
+	transition: 0.2s;
+	height: 0;
+	background: #0ae;
+}
+.adminbutton:hover::after{
+	height: 100%;
+}
+.adminbutton:hover::before{
+	height: 100%;
+}
+.usernamewithdate{
+	position: relative;
+	height: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.75em;
+
+}
+.usernamewithdate span{
+	position: relative;
+	right: 20px;
+}
+.usermessage{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position: relative;
+	height: auto;
+	width: 100%;
+	word-break: wrap;
+	display: flex;
+	border-bottom: 2px dotted #0ae;
+	right: 5px;
+}
+.usermessage p{
+	font-size: 0.7em;
+	
+	
+	
+}
+#loginingmenuExit{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	background: url(img/exit.png) no-repeat center center;
+	background-size: cover;
+	height: 60px;
+	width: 60px;
+	transition: 0.4s;
+	z-index: 999;
+	cursor: pointer;
+}
+#loginingmenuExit:hover{
+	transform: rotate(90deg);
+}
+#chatWindow::-webkit-scrollbar { width: 2px; height: 2px; }
+
+#chatWindow::-webkit-scrollbar-track {  background-color: #999;}
+#chatWindow::-webkit-scrollbar-track-piece { background-color: rgba(0,0,0,1);}
+#chatWindow::-webkit-scrollbar-thumb { height: 50px; width: 15px; background: #0ae; }
+#chatWindow::-webkit-scrollbar-corner { background-color: #999;}
+#chatWindow::-webkit-resizer { background-color: #0ae;}
+#loginingmenu{
+	position: fixed;
+	top: 50%;
+	display: none;
+	transition: 1s;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 99;
+	background: url(img/fake_brick.png) repeat center center;
+}
+#loginingmenu button {
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	margin-top: 50px;
+}
+
+#loginingmenu button:active {
+	transform: scale(0.95);
+}
+
+#loginingmenu button:focus {
+	outline: none;
+}
+
+#loginingmenu button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+	margin-top: 20px;
+}
+
+#loginingmenu form {
+	background: url(img/fake_brick.png) repeat center center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+#loginingmenu input {
+	background: url(img/classy_fabric.png) repeat center center;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+.containerr{
+	background: url(img/classy_fabric.png) repeat center center;
+
+}
+#loginingmenu .containerr {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+	
+}
+#imgplace.dragover {
+     background-color: #fafafa;
+     outline-offset: -17px;
+}
+#imgplace{
+	position: relative;
+	bottom: 0;
+	height: 120px;
+	display: none;
+	margin-top: 20px;
+	border-top: 2px solid #0ae;
+	border-bottom: 2px solid #0ae;
+	width: 100%;
+	left: 0;
+	overflow-y: scroll;
+	background:url(img/classy_fabric.png) repeat center center; 
+}
+#imgplace::-webkit-scrollbar { width: 2px; height: 2px; }
+
+#imgplace::-webkit-scrollbar-track {  background-color: #999;}
+#imgplace::-webkit-scrollbar-track-piece { background-color: rgba(0,0,0,1);}
+#imgplace::-webkit-scrollbar-thumb { height: 50px; width: 15px; background: #0ae; }
+#imgplace::-webkit-scrollbar-corner { background-color: #999;}
+#imgplace::-webkit-resizer { background-color: #0ae;}
+
+.emoji{
+	cursor: pointer;
+	border-radius: 10px;
+	background: #000;
+	height: 25px;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 10px;
+}
+#loginingmenu .form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+
+}
+
+#loginingmenu .sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+#loginingmenu .containerr.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+#loginingmenu .sign-up-container {
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+#loginingmenu .containerr.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.containerr.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+ .overlay {
+	background: #FF416C;
+	background: url(img/classy_fabric.png) repeat center center;
+	
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.containerr.right-panel-active .overlay {
+  	transform: translateX(50%);
+}
+
+ .overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 0.8em;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+ .overlay-left {
+	transform: translateX(-20%);
+}
+ .containerr.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.containerr.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
+ .social-container {
+	margin: 20px 0;
+}
+
+#loginingmenu .social-container a {
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+}
+
+#profile{
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 95%;
+	position: absolute;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 0;
+	background: url(img/classy_fabric.png) repeat center center;
+}
+#adminexit{
+	position: fixed;
+	top: 119px;
+	right: 0; 
+	height: 60px;
+	border-bottom-left-radius: 20px;
+	cursor: pointer;
+	width: 60px;
+	display: flex;
+	z-index: 999999;
+	justify-content: center;
+	background: url('img/fake_brick.png') no-repeat center center;
+	background-size: contain;
+}
+#adminexit::after{
+	content: '';
+	height: 100%;
+	width: 100%;
+	
+	background: url('img/exit.png') no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	z-index: 2;
+
+}
+#profileLogo{
+	height: 500px;
+	width: 500px;
+	cursor: pointer;
+	border-radius: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+.userinfo2{
+	height: 100%;
+	width: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	flex-direction: column;
+	text-transform: uppercase;
+	margin-right: 15px;
+	margin-left: 15px;
+	border-top: 2px solid #0ae;
+	border-bottom: 2px solid #0ae;
+}
+.userinfo2 input{
+	width: calc(100% - 5px);
+	padding-left: 5px; 
+	height: 30px;
+	margin-top: 20px;
+	background: url(img/classy_fabric.png) repeat center center;
+	border: none;
+	border-top: 2px solid #0ae;
+	outline: none;
+	color: #0ae;
+}
+.razdel::before{
+	content: '';
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	background: url(img/sysdesign.png) no-repeat center center;
+	z-index: -1;
+	background-size: contain;
+	left: 0;
+	top: 0;
+	transform: translate(10%,-100%);
+}
+#profilecontainer{
+	height: 1000px;
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#savechanges{
+	position: absolute;
+	right: 5%;
+	bottom: 15%;
+	transition: 1s;
+	height: 60px;
+	width: 180px;
+	background:  url(img/fake_brick.png);
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 0.8em;
+
+	border: none;
+	border-top: 2px solid #0ae;
+	border-bottom: 2px solid #0ae;
+	outline: none;
+}
+#savechanges::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	background: #0ae;
+	left: 0;
+	transition: 0.2s;
+	width: 2px;
+	height: 0;
+}
+#savechanges::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #0ae;
+	width: 2px;
+	transition: 0.2s;
+	height: 0;
+}
+#savechanges:hover::before{
+	height: 100%;
+}
+#savechanges:hover::after{
+	height: 100%;
+}
+#profilefooter{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 120px;
+	width: 100%;
+	background: url(img/fake_brick.png);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.razdel{
+	transition: 1s;
+	position: absolute;
+	top: 120px;
+	left: 120px;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	color: #0ae;
+	z-index: 99;
+	border-bottom: 2px solid #0ae
+	;
+}
+
+	#main{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		
+	}
+	.circle{
+		position: relative;
+		width: 600px;
+		height: 600px;
+		
+		filter: url(#wavy) blur(1px);
+	}
+	.circle2{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		
+		filter: url(#wavy) blur(1px);
+	}
+	.circle:before{
+		content: '';
+		position: absolute;
+		top: 50px;
+		left: 50px;
+		bottom: 50px;
+		right: 50px;
+		border:20px solid #f90; 
+		border-radius: 50%;
+		box-shadow: 0 0 50px #f90,
+					inset 0 0 50px #f90;
+		
+		
+
+	}
+	.circle:after{
+		content: '';
+		position: absolute;
+		top: 50px;
+		left: 50px;
+		bottom: 50px;
+		right: 50px;
+		border:20px solid #f90; 
+		border-radius: 50%;
+		box-shadow: 0 0 10px #f90,
+					inset 0 0 20px #f90;
+		
+
+	}
+	.circle:nth-child(2):before{
+		animation-delay: -2.5s;
+
+	}
+	
+	@keyframes anima{
+		0%{
+			box-shadow: 0 0 50px #0f0,
+					inset 0 0 50px #0f0;
+					filter: hue-rotate(0deg);
+					
+		}
+		20%{
+			box-shadow: 0 0 60px #0f0,
+					inset 0 0 60px #0f0;
+					
+		}
+		40%{
+			box-shadow: 0 0 40px #0f0,
+					inset 0 0 40px #0f0;
+					
+		}
+		60%{
+			box-shadow: 0 0 80px #0f0,
+					inset 0 0 80px #0f0;
+					
+		}
+		80%{
+			box-shadow: 0 0 100px #0f0,
+					inset 0 0 100px #0f0;
+					
+		}
+		100%{
+			box-shadow: 0 0 50px #0f0,
+					inset 0 0 50px #0f0;
+					filter: hue-rotate(360deg);
+
+		}
+	}
+	
+	svg{
+		width: 0;
+		height: 0;
+		
+	}
+	body i {
+		position: absolute;
+		background: #f90;
+		border-radius: 50%;
+		animation: ani linear infinite;
+		z-index: -1;
+	}
+	@keyframes ani{
+		0%{
+			opacity: 0;
+			transform: translateY(0);
+		}
+		10%,90%{
+			opacity: 1;
+		}
+		100%{
+			opacity: 0;
+			transform: translateY(-100px);
+		}
+	}
+	.img{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		height: 50%;
+		width: 50%;
+		background: url(img/logo.png) no-repeat center center;
+		background-size: contain;
+
+	}
+	
+	.app{
+		height: auto;
+		width: 100%;
+		position:relative;
+		display: inline-flex;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		border-top: 2px dotted #0ae;
+		border-bottom: 2px dotted #0ae;
+	}
+
+	.appimg{
+		
+		float: left;
+		min-width: 30%;
+		background: #f90;
+		position: relative;
+	}
+	.appinfoP{
+		width: 70%;
+		position: relative;
+		float: right;
+		display: flex;
+		flex-direction: column;
+	}
+	.appname{
+		margin: 20px;
+		font-size: 1.1em;
+		color: #f90;
+
+	}
+	.appmoreinfo{
+		height: 
+		20px;
+		width: 100%;
+		margin: 10px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.appdate{
+		margin-right: 20px;
+		margin-left: 20px;
+		color: #0ae;
+	}
+	.apprazel{
+		margin-right: 20px;
+		margin-left: 20px;
+		color: #f90;
+	}
+	.appdownloadcount{
+		margin-right: 20px;
+		margin-left: 20px;
+		color: #0ae;
+	}
+	.appabout{
+		font-size: 0.8em;
+		margin: 30px;
+		color: #0ae;
+	}
+	.apppage{
+		float: right;
+		height: 80px;
+		text-align: center;
+		width: 150px;
+		text-transform:uppercase;
+		padding: 20px;
+		background-size: 180px;
+		border: 2px solid #f90;
+		font-size: 0.9em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 20px;
+		text-decoration: none;
+		color: #fff;
+		background: transparent;
+		cursor: pointer;
+		outline: none;
+		transition: 0.5s;
+	}
+	.apppage:hover{
+		background: #f90 url(img/pixel.png);
+		transition-delay: 0.6s;
+		animation: animate 0.6s steps(6) forwards; 
+	}
+	@keyframes animate{
+		0%{
+		background-position-y:0;
+	}
+	100%{
+		background-position-y:-480px;
+	}
+	}
+	.downloadcon{
+		height: 200px;
+		border-radius: 50%;
+		width: 200px;
+		
+		display: flex;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		justify-content: center;
+		align-items: center;
+		background: url(img/pixel2.png) repeat center center;
+		text-align: center;
+		
+		border: 2px solid #0ae;
+		margin: 50px;
+	}
+	.downloadcon button{
+		position: relative;
+		top: 100px;
+		text-decoration: none;
+		font-size: 0.8em;
+		cursor: pointer;
+		outline: none;
+		border: none;
+		background: #0ae;
+		padding: 5px;
+		border-radius: 20px;
+	}
+	.reklama{
+		display: none;
+	}
+	#ifempty{
+		height: 500px;
+		width: 100%;
+		position: relative;
+		top: 100px;
+		background: url(img/infinite2.gif) no-repeat center center;
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#appCharacter{
+		height: 60px;
+		width: 100%;
+		display: inline-flex;
+		position: relative;
+		
+		position: relative;
+		background: url(img/classy_fabric.png) repeat center center;
+	}
+	.character{
+		height: 100%;
+		width: 33%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #0ae;
+		font-size: 0.8em;
+
+		position: relative;
+	}
+	#downloadsection{
+		height: 500px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		
+	}
+	#downloadsectionHeader{
+		height: 60px;
+		width: 100%;
+		background: url(img/fancy-pants.jpg) repeat center center;
+		background-attachment: fixed;
+		color: #fff;
+		position: relative;
+		display: flex;
+		text-transform: uppercase;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	#downloadsectionHeader h2{
+		position: relative;
+		left: 50px;
+		color: #f90;
+	}
+	#downloadsectionHeader img{
+		height: 35px;
+		position: relative;
+		left: 35px;
+	}
+	#downloadsectionFooter h2{
+		position: relative;
+		left: 50px;
+		color: #f90;
+	}
+	#downloadsectionFooter img{
+		height: 35px;
+		position: relative;
+		left: 35px;
+	}
+	#downloadsectionMiddle{
+		height: 380px;
+
+		width: 100%;
+		background: url(img/classy_fabric.png) repeat center center;
+		display: flex;
+		align-items: center;
+		position: relative;
+		justify-content: center;
+	}
+	#downloadsectionDownload{
+		height: 90px;
+		border-radius: 20px;
+		width: 300px;
+		position: relative;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		cursor: pointer;
+		outline: none;
+		background: url(img/fake_brick.png) repeat center center;
+	}
+	#downloadsectionDownloadImg{
+		width: 90px;
+		border-radius: 20px;
+		height: 100%;
+		background: #f90 url(img/cloud.png) no-repeat center center;
+		background-size: 50%;
+		float: left;
+	}
+	#downloadBut{
+		float: right;
+		border-radius: 20px;
+		height: 100%;
+		width: calc(100% - 90px);
+		display: flex;
+		justify-content: center;
+		border-right: 2px solid #f90;
+		align-items: center;
+	}
+	#downloadsectionFooter{
+		height: 60px;
+		position: relative;
+		width: 100%;
+		background: url(img/fancy-pants.jpg) repeat center center;
+		background-attachment: fixed;
+		color: #fff;
+		display: flex;
+		text-transform: uppercase;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	#randomMaterials{
+		height: auto;
+		min-height: 350px;
+		width: 100%;
+		position: relative;
+		display: flex;justify-content: center;
+		align-items: center;
+	}
+	 .swiper-container {
+      width: 799px;
+      height:80%;
+      position: relative;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+     	width: 799px;
+      height: 100%;
+     color: #f90;
+    background: url(img/classy_fabric.png) repeat center center;
+    }
+    .swiperImg{
+    	width: 40%;
+    	height: 100%;
+    	background-size: contain;
+    	position: relative;
+    	float: left;
+    }
+    .swiperInfo{
+    	height: 100%;
+    	width: 60%;
+    	position: relative;
+    	float: right;
+    	display: flex;
+    
+    	
+    	flex-direction: column;
+    }
+    .App_Name{
+    	height: 33%;
+    	width: 100%;
+    	display: flex;
+    	align-items: center;
+    	justify-content: flex-end;
+    	color: #f90;
+    	font-size: 0.7em;
+    	text-transform: uppercase;
+    	position: relative;
+    	right: 20px;
+    }
+    .App_About{
+    	height: 53%;
+    	width: 100%;
+    	font-size: 0.7em;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    }
+    .App_Download{
+    	height: 13.933333%;
+    	width: 100%;
+    	display: flex;
+    	align-items: center;
+    	justify-content: flex-end;
+    }
+    .App_Download button{
+    	height: 100%;
+    	width: 150px;
+    	background: transparent;
+    	display: inline-flex;
+    	justify-content: center;
+    	align-items: center;
+    	font-size: 0.8em;
+    	cursor: pointer;
+    	outline: none;
+    	border: none;
+    	background: #f90;
+    	border-top-left-radius: 20px;
+    }
+    .pie{
+    width: 250px;
+    height: 250px;
+    display: none;
+    position: relative;
+    border-radius: 50%;
+    background-color: #f90;
+    border: 2px solid #f90;
+    float: left;
+    margin: 2em;
+   
+  
+
+}
+.block{
+    position:absolute;
+    background:url(img/classy_fabric.png) repeat center center;
+    width:230px;
+    height:230px;
+    display:block;
+    border-radius:50%;
+    top:10px;
+    left:10px;
+
+  }
+#time{
+  font-size:3em;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color:#f90;
+}
+.degree{
+  /*90 + ( 360 * .1 )*/
+      background-image:
+        linear-gradient(90deg, transparent 50%,  #000 50%),
+        linear-gradient(90deg, #000 50%, transparent 50%);
+}
